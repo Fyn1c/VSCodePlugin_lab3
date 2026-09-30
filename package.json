@@ -1,0 +1,31 @@
+{
+  "name": "font-switcher",
+  "displayName": "Font Switcher",
+  "description": "Рандомный сменщик шрифтов",
+  "version": "0.0.1",
+  "publisher": "local",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./extension.js",
+  "activationEvents": [
+    "onCommand:font-switcher.changeFont"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "font-switcher.changeFont",
+        "title": "Рандомно сменить шрифт"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "font-switcher.changeFont",
+        "key": "ctrl+alt+f"
+      }
+    ]
+  }
+}
